@@ -44,7 +44,7 @@ def render_eda_view():
         if st.checkbox("Gerar relatório com YData Profiling"):
             profile = ydp.ProfileReport(dataset)
             with st.spinner("Gerando relatório YData Profiling..."):
-                profile_path = os.path.join(data_dir, "ydata_profile_report.html")
+                profile_path = os.path.join(result_dir, "ydata_profile_report.html")
                 profile.to_file(profile_path)
                 with open(profile_path, "r", encoding="utf-8") as f:
                     html = f.read()
