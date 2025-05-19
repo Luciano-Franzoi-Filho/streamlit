@@ -22,7 +22,7 @@ def main():
     render_sidebar()
     
     # Seleção de funcionalidade principal
-    option = st.sidebar.selectbox("Selecione uma opção", ["Download Dataset", "EDA", "Treinamento de Modelos"])
+    option = st.sidebar.selectbox("Selecione uma opção", ["Selecione uma opção", "Download Dataset", "EDA", "Treinamento de Modelos"])
     
     if option == "Download Dataset":
         dataset_name = st.text_input("Digite o nome do dataset do Kaggle (ex: zynicide/wine-reviews)")

@@ -22,9 +22,12 @@ def render_eda_view():
             st.warning("Nenhum dataset encontrado na pasta 'data'.")
             return
 
-        # Seção de seleção de dataset
-        arquivo_escolhido = st.selectbox("Selecione o dataset para análise:", arquivos)
-        if not arquivo_escolhido:
+        # Adiciona uma opção vazia no início
+        arquivos_opcoes = ["Selecione um arquivo"] + arquivos
+        arquivo_escolhido = st.selectbox("Selecione o dataset para análise:", arquivos_opcoes)
+
+        # Só continua se o usuário selecionar um arquivo válido
+        if arquivo_escolhido == "Selecione um arquivo":
             st.info("Selecione um arquivo para continuar.")
             return
 
@@ -46,7 +49,6 @@ def render_eda_view():
                 with open(profile_path, "r", encoding="utf-8") as f:
                     html = f.read()
                     components.html(html, height=800, width=1000, scrolling=True)
-
 
         # D-Tale
         if st.checkbox("Lançar D-Tale"):
