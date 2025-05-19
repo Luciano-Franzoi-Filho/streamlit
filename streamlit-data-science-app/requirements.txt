@@ -1,0 +1,12 @@
+streamlit
+ydata
+dtale
+sweetviz
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+kaggle
+logging
+streamlit-logger

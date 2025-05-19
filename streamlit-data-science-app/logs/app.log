@@ -1,0 +1,69 @@
+2025-05-19 19:55:08,713 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:55:13,549 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:55:14,498 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:55:15,046 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:55:32,587 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:55:33,541 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:55:34,725 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:55:40,816 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:55:48,853 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:55:52,114 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:55:54,390 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:55:54,415 - dtale.cli.clickutils - DEBUG - main.py
+2025-05-19 19:55:54,417 - dtale.cli.clickutils - DEBUG - Hostname: BOOK3-NINO
+2025-05-19 19:55:54,434 - src.utils.logger - ERROR - Error in EDA view: data loaded must be one of the following types: pandas.DataFrame, pandas.Series, pandas.DatetimeIndex, pandas.MultiIndex, xarray.Dataset, numpy.array, numpy.ndarray, list, dict
+2025-05-19 19:55:57,725 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:55:58,649 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:55:58,672 - src.utils.logger - ERROR - Error in EDA view: 'EDAController' object has no attribute 'rdd'
+2025-05-19 19:55:59,955 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:56:00,780 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 19:56:00,878 - src.utils.logger - ERROR - Error in EDA view: "source" parameter should either be a string or a list of 2 elements: [dataframe, "Name"].
+2025-05-19 19:56:03,242 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:04:38,183 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:05:28,982 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:07:18,496 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:07:33,161 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:07:33,673 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:07:34,112 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:08:35,454 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:08:54,383 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:09:01,664 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:09:03,503 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:09:05,354 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:10:05,081 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:11:49,031 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:11:58,547 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:12:00,384 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:12:02,186 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:12:24,724 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:13:16,007 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:13:26,884 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:14:02,256 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:20:00,787 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:20:06,639 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:20:18,663 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:22:09,179 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:22:14,228 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:22:31,683 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:22:35,030 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:22:35,237 - src.utils.logger - ERROR - Erro na view de EDA: 'EDAController' object has no attribute 'load_dataset'
+2025-05-19 20:22:47,023 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:22:47,079 - src.utils.logger - ERROR - Erro na view de EDA: 'EDAController' object has no attribute 'load_dataset'
+2025-05-19 20:24:46,688 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:24:50,241 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:24:50,453 - src.utils.logger - ERROR - Erro na view de EDA: 'EDAController' object has no attribute 'load_dataset'
+2025-05-19 20:24:53,623 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:24:53,680 - src.utils.logger - ERROR - Erro na view de EDA: 'EDAController' object has no attribute 'load_dataset'
+2025-05-19 20:26:11,665 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:26:17,898 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:26:20,967 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:26:21,134 - src.utils.logger - ERROR - Error in EDA view: 'EDAController' object has no attribute 'rdd'
+2025-05-19 20:26:23,060 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:26:24,201 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:26:24,273 - dtale.cli.clickutils - DEBUG - main.py
+2025-05-19 20:26:24,274 - dtale.cli.clickutils - DEBUG - Hostname: BOOK3-NINO
+2025-05-19 20:26:24,277 - src.utils.logger - ERROR - Error in EDA view: data loaded must be one of the following types: pandas.DataFrame, pandas.Series, pandas.DatetimeIndex, pandas.MultiIndex, xarray.Dataset, numpy.array, numpy.ndarray, list, dict
+2025-05-19 20:26:25,482 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:26:26,367 - src.utils.logger - INFO - ModelController initialized
+2025-05-19 20:26:26,464 - src.utils.logger - ERROR - Error in EDA view: "source" parameter should either be a string or a list of 2 elements: [dataframe, "Name"].
+2025-05-19 20:26:27,947 - src.utils.logger - INFO - ModelController initialized
