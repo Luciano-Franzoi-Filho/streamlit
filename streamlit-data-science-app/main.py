@@ -30,7 +30,7 @@ def main():
             data_controller.download_dataset(dataset_name)
             st.success(f"Dataset '{dataset_name}' baixado com sucesso!")
     elif option == "EDA":
-        render_eda_view(eda_controller)
+        render_eda_view()
     elif option == "Treinamento de Modelos":
         render_model_view(model_controller)
 if __name__ == "__main__":
