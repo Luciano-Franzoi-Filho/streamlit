@@ -36,6 +36,14 @@ def render_eda_view():
         dataset = pd.read_csv(dataset_path)
         st.success(f"Dataset '{arquivo_escolhido}' carregado com sucesso.")
         st.dataframe(dataset.head())
+        st.write(f"Total de linhas: {dataset.shape[0]}")
+        st.write(f"Total de colunas: {dataset.shape[1]}")
+        st.write(f"Colunas: {', '.join(dataset.columns)}")
+        st.write(f"Valores ausentes:\n{dataset.isnull().sum()}")
+        st.write(f"Valores únicos:\n{dataset.nunique()}")
+        st.write(f"Colunas categóricas:\n{dataset.select_dtypes(include=['object']).columns.tolist()}")
+        st.write(f"Colunas numéricas:\n{dataset.select_dtypes(include=['number']).columns.tolist()}")
+
 
         # Seção de seleção do tipo de relatório
         st.subheader("Escolha o tipo de relatório que deseja gerar:")

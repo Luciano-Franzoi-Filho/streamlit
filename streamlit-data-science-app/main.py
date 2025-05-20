@@ -5,6 +5,7 @@ from src.controllers.model_controller import ModelController
 from src.views.sidebar import render_sidebar
 from src.views.eda_view import render_eda_view
 from src.views.model_view import render_model_view
+from src.views.download_view import DownloadDataset
 import streamlit as st
 
 # Set up logging
@@ -25,13 +26,11 @@ def main():
     option = st.sidebar.selectbox("Selecione uma opção", ["Selecione uma opção", "Download Dataset", "EDA", "Treinamento de Modelos"])
     
     if option == "Download Dataset":
-        dataset_name = st.text_input("Digite o nome do dataset do Kaggle (ex: zynicide/wine-reviews)")
-        if st.button("Baixar Dataset") and dataset_name:
-            data_controller.download_dataset(dataset_name)
-            st.success(f"Dataset '{dataset_name}' baixado com sucesso!")
+        DownloadDataset(data_controller)
     elif option == "EDA":
         render_eda_view()
     elif option == "Treinamento de Modelos":
         render_model_view(model_controller)
+
 if __name__ == "__main__":
     main()
