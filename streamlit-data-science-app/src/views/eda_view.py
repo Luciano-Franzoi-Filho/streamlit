@@ -14,12 +14,12 @@ def render_eda_view():
         st.title("Exploratory Data Analysis")
 
         # Caminho para a pasta de dados
-        data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "data")
+        data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "dados")
         result_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "results")
         arquivos = [f for f in os.listdir(data_dir) if f.endswith('.csv')]
 
         if not arquivos:
-            st.warning("Nenhum dataset encontrado na pasta 'data'.")
+            st.warning("Nenhum dataset encontrado na pasta 'dados'.")
             return
 
         # Adiciona uma opção vazia no início

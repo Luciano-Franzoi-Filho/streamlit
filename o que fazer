@@ -1,0 +1,3 @@
+separar as views que eu fiz com somente a parte da view e a parte logica, 
+colocar a parte logica no controller correto, cada um tem o seu controller correto
+

@@ -16,10 +16,10 @@ def DownloadDataset(data_controller):
                 if api is None:
                     st.error("Erro ao autenticar no Kaggle. Verifique suas credenciais.")
                     return
-                data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "data")
+                data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "dados")
                 try:
                     api.dataset_download_files(dataset_name, path=data_dir, unzip=True)
-                    st.success(f"Dataset '{dataset_name}' baixado com sucesso e salvo na pasta 'data'!")
+                    st.success(f"Dataset '{dataset_name}' baixado com sucesso e salvo na pasta 'dados'!")
                 except Exception as e:
                     logger.error(f"Erro ao baixar dataset: {e}")
                     st.error("Falha ao baixar o dataset. Verifique o nome e tente novamente.")
