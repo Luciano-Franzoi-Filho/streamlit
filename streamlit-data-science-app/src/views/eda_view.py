@@ -11,7 +11,7 @@ logger = setup_logger()
 
 def render_eda_view():
     try:
-        st.title("Exploratory Data Analysis")
+        st.title("Exploratory Data Analysis (EDA)")
 
         # Caminho para a pasta de dados
         data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "dados")
@@ -48,27 +48,34 @@ def render_eda_view():
         # Seção de seleção do tipo de relatório
         st.subheader("Escolha o tipo de relatório que deseja gerar:")
 
-        # YData Profiling
-        if st.checkbox("Gerar relatório com YData Profiling"):
-            profile = ydp.ProfileReport(dataset)
-            with st.spinner("Gerando relatório YData Profiling..."):
-                profile_path = os.path.join(result_dir, "ydata_profile_report.html")
-                profile.to_file(profile_path)
-                with open(profile_path, "r", encoding="utf-8") as f:
-                    html = f.read()
-                    components.html(html, height=800, width=1000, scrolling=True)
+        report_type = st.selectbox(
+            "Selecione o tipo de relatório:",
+            ("YData Profiling", "D-Tale", "Sweetviz")
+        )
 
-        # D-Tale
-        if st.checkbox("Lançar D-Tale"):
-            d = dtale.show(dataset)
-            st.write("D-Tale está em execução. Clique [aqui](%s) para visualizar." % d._url)
+        if report_type == "YData Profiling":
+            if st.button("Gerar relatório YData Profiling"):
+                with st.spinner("Gerando relatório YData Profiling..."):
+                    profile = ydp.ProfileReport(dataset)
+                    profile_path = os.path.join(result_dir, "ydata_profile_report.html")
+                    profile.to_file(profile_path)
+                    with open(profile_path, "r", encoding="utf-8") as f:
+                        html = f.read()
+                        components.html(html, height=800, width=1000, scrolling=True)
 
-        # Sweetviz
-        if st.checkbox("Gerar relatório com Sweetviz"):
-            report = sv.analyze(dataset)
-            report_path = os.path.join(result_dir, 'sweetviz_report.html')
-            report.show_html(report_path)
-            st.write(f"Relatório Sweetviz gerado. Verifique o arquivo: [sweetviz_report.html](./results/sweetviz_report.html)")
+        elif report_type == "D-Tale":
+            if st.button("Lançar D-Tale"):
+                d = dtale.show(dataset)
+                st.write(f"D-Tale está em execução. Clique [aqui]({d._url}) para visualizar.")
+
+        elif report_type == "Sweetviz":
+            if st.button("Gerar relatório Sweetviz"):
+                with st.spinner("Gerando relatório Sweetviz..."):
+                    report = sv.analyze(dataset)
+                    report_path = os.path.join(result_dir, 'sweetviz_report.html')
+                    report.show_html(report_path)
+                    st.write(f"Relatório Sweetviz gerado. Verifique o arquivo: [sweetviz_report.html](./results/sweetviz_report.html)")
+
 
     except Exception as e:
         logger.error("Erro na visualização EDA: %s", e)

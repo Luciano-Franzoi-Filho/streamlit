@@ -11,7 +11,7 @@ def render_sidebar():
         "Selecione uma opção",
         "Download Dataset",
         "EDA",
-        "Treinamento de Modelos",
+        # "Treinamento de Modelos",
         "Machine Learning"
     ]
     opcao_principal = sidebar.selectbox("Selecione uma funcionalidade:", opcoes)
