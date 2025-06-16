@@ -1,19 +1,10 @@
-separar as views que eu fiz com somente a parte da view e a parte logica, 
-colocar a parte logica no controller correto, cada um tem o seu controller correto
-
-
 1. Classificação
-Wine Quality
-
 Kaggle: uciml/red-wine-quality-cortez-et-al-2009
-Descrição: Prever a qualidade do vinho (variável alvo: quality).
+(variável alvo: quality).
+
 2. Regressão
-Medical Cost Personal Datasets
-
 Kaggle: mirichoi0218/insurance
-Descrição: Prever o custo do seguro médico (variável alvo: charges).
-3. Clusterização
-Mall Customer Segmentation Data
+(variável alvo: charges).
 
+3. Clusterização
 Kaggle: vjchoudhary7/customer-segmentation-tutorial-in-python
-Descrição: Segmentação de clientes de shopping.
